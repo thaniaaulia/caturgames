@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catur Jawa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="game-container">
+
+    <header>
+      <span class="label">PERMAINAN TRADISIONAL</span>
+      <h1>♟ Catur Jawa</h1>
+      <p>Dam-Daman Digital</p>
+    </header>
+
+    <div class="game-info">
+      <div class="player red-player">
+        <span class="dot red"></span>
+        <div>
+          <small>Pemain 1</small>
+          <b>Merah</b>
+        </div>
+        <strong id="redCount">12</strong>
+      </div>
+
+      <div class="turn" id="turnText">
+        Giliran Merah
+      </div>
+
+      <div class="player blue-player">
+        <span class="dot blue"></span>
+        <div>
+          <small>Pemain 2</small>
+          <b>Biru</b>
+        </div>
+        <strong id="blueCount">12</strong>
+      </div>
+    </div>
+
+    <main>
+      <div id="board" class="board"></div>
+    </main>
+
+    <p id="message" class="message">
+      Pilih bidak untuk bermain
+    </p>
+
+    <div class="buttons">
+      <button id="resetBtn">↻ Game Baru</button>
+      <button id="undoBtn">↶ Undo</button>
+    </div>
+
+  </div>
+
+  <div id="winnerModal" class="modal">
+    <div class="modal-box">
+      <div class="trophy">🏆</div>
+      <h2 id="winnerText">Merah Menang!</h2>
+      <p>Permainan selesai.</p>
+      <button id="playAgain">Main Lagi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
